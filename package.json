@@ -1,0 +1,26 @@
+{
+  "name": "github-action-tests-against-docker-container",
+  "version": "1.0.0",
+  "description": "Sample on how to run test against docker container. This example covers running tests against mysql database.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mihaerzen/github-action-tests-against-docker-container.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mihaerzen/github-action-tests-against-docker-container/issues"
+  },
+  "homepage": "https://github.com/mihaerzen/github-action-tests-against-docker-container#readme",
+  "devDependencies": {
+    "mocha": "^8.1.1"
+  },
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
+}

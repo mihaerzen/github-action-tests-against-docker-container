@@ -1,0 +1,15 @@
+name: tests
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Bring up the database
+        run: docker-compose up -d db
+      - name: Run the tests
+        run: docker-compose up --exit-code-from test
